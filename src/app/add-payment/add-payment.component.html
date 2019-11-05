@@ -1,0 +1,35 @@
+<form (ngSubmit)= 'addPay()'>
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+    <table>
+      <tr>
+        <th>Customer ID</th>
+        <td>{{trip.customerId}}</td>
+      </tr>
+      <tr>
+        <th>Booking ID</th>
+        <td>{{trip.bookingId}}</td>
+      </tr>
+      <tr>
+        <th>Driver ID</th>
+        <td>{{trip.driverId}}</td>
+      </tr>
+      <tr>
+        <th>Final Fare</th>
+        <td>{{trip.finalFare}}</td>
+      </tr>
+      <tr>
+        <th>Wallet Amt</th>
+        <td>{{trip.wallet}}</td>
+      </tr>
+      <tr>
+        <button type="submit" class="btn btn-success" >PAY {{trip.finalFare}}</button> 
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+</form>
+
